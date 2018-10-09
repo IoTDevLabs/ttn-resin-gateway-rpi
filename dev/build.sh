@@ -6,7 +6,8 @@ mkdir -p $INSTALL_DIR/dev
 cd $INSTALL_DIR/dev
 
 if [ ! -d lora_gateway ]; then
-    git clone https://github.com/kersing/lora_gateway.git  || { echo 'Cloning lora_gateway failed.' ; exit 1; }
+    #git clone https://github.com/kersing/lora_gateway.git  || { echo 'Cloning lora_gateway failed.' ; exit 1; }
+    git clone https://github.com/IoTDevLabs/lora_gateway.git  || { echo 'Cloning lora_gateway failed.' ; exit 1; }
 else
     cd lora_gateway
     git reset --hard
