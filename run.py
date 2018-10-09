@@ -349,9 +349,9 @@ while True:
       time.sleep(0.1)
       GPIO.output(pin_number, 0)
       time.sleep(0.1)
-      GPIO.input(pin_number)
-      GPIO.cleanup(pin_number)
-      time.sleep(0.1)
+      #GPIO.input(pin_number)
+      #GPIO.cleanup(pin_number)
+      #time.sleep(0.1)
     except ValueError:
       print ("Can't interpret "+os.environ.get("GW_RESET_PIN")+" as a valid pin number.")
 
